@@ -1,0 +1,7 @@
+{
+  "name": "clean-boilerplate",
+  "private": true,
+  "devDependencies": {
+    "git-commit-msg-linter": "^5.0.8"
+  }
+}
