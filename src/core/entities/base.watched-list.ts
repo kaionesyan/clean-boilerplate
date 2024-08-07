@@ -1,4 +1,4 @@
-export abstract class WatchedList<T> {
+export abstract class BaseWatchedList<T> {
   currentItems: T[]
   private initialItems: T[]
   private newItems: T[]

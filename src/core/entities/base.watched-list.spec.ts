@@ -1,6 +1,6 @@
-import { WatchedList } from '@/core/entities/watched-list'
+import { BaseWatchedList } from '@/core/entities/base.watched-list'
 
-class NumberWatchedList extends WatchedList<number> {
+class NumberWatchedList extends BaseWatchedList<number> {
   compare(a: number, b: number): boolean {
     return a === b
   }

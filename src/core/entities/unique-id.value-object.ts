@@ -1,8 +1,8 @@
 import { randomUUID } from 'crypto'
 
-import { ValueObject } from './value-object'
+import { BaseValueObject } from './base.value-object'
 
-export class UniqueId extends ValueObject<string> {
+export class UniqueId extends BaseValueObject<string> {
   get value() {
     return this.props
   }

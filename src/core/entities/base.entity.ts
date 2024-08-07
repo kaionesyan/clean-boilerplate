@@ -2,7 +2,7 @@ import { randomUUID } from 'crypto'
 
 import { UniqueId } from './unique-id.value-object'
 
-export abstract class Entity<Props> {
+export abstract class BaseEntity<Props> {
   get id() {
     return this._id
   }
