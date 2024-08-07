@@ -9,8 +9,10 @@ export class SayHelloController {
   async handle() {
     const result = await this.sayHelloUseCase.execute()
 
+    console.log(result.value.message)
+
     if (result.isOk()) {
-      return result.value.message
+      return result.value
     }
 
     throw result.value

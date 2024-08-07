@@ -3,9 +3,10 @@
   "private": true,
   "scripts": {
     "build": "nest build",
+    "start": "nest start",
     "dev": "nest start --watch",
     "test": "vitest run",
-    "test:e2e": "vitest run --config ./vitest.config.e2e.ts"
+    "test:e2e": "vitest run --config ./vitest.config.e2e.mts"
   },
   "dependencies": {
     "@nestjs/common": "^10.3.10",
@@ -15,11 +16,14 @@
   },
   "devDependencies": {
     "@nestjs/cli": "^10.4.2",
+    "@nestjs/testing": "^10.3.10",
     "@rocketseat/eslint-config": "^2.2.2",
     "@swc/core": "^1.7.6",
+    "@types/supertest": "^6.0.2",
     "eslint": "^8.57.0",
     "eslint-plugin-import-helpers": "^1.3.1",
     "git-commit-msg-linter": "^5.0.8",
+    "supertest": "^7.0.0",
     "typescript": "^5.5.4",
     "unplugin-swc": "^1.5.1",
     "vite-tsconfig-paths": "^4.3.2",

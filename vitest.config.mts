@@ -1,6 +1,7 @@
+/* eslint-disable import/no-default-export */
 import swc from 'unplugin-swc'
-import { defineConfig } from 'vitest/config'
 import tsConfigPaths from 'vite-tsconfig-paths'
+import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
   test: {
