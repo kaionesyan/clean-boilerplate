@@ -1,4 +1,4 @@
-import { Result } from './result'
+import { Result } from './result.type'
 
 describe('Result Type', () => {
   const doSomething = (shouldSucceed: boolean): Result<string, number> => {

@@ -1,5 +1,5 @@
-import { Result } from '@/core/types/result'
-import { UseCaseResult } from '@/core/types/use-case-result'
+import { Result } from '@/core/types/result.type'
+import { UseCaseResult } from '@/core/types/use-case-result.type'
 
 type Response = UseCaseResult<{
   message: string
