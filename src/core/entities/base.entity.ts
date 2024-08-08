@@ -1,9 +1,7 @@
 import { randomUUID } from 'crypto'
 
-import { UniqueId } from './unique-id.value-object'
-
 export abstract class BaseEntity<Props> {
-  private _id: UniqueId
+  private _id: string
 
   get id() {
     return this._id
@@ -11,8 +9,8 @@ export abstract class BaseEntity<Props> {
 
   protected constructor(
     protected props: Props,
-    _id?: UniqueId,
+    _id?: string,
   ) {
-    this._id = _id ?? UniqueId.create(randomUUID())
+    this._id = _id ?? randomUUID()
   }
 }

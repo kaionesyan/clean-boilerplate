@@ -1,9 +1,12 @@
+import { AppError } from '@/core/errors/app.error'
 import { Result } from '@/core/types/result.type'
-import { UseCaseResult } from '@/core/types/use-case-result.type'
 
-type Response = UseCaseResult<{
-  message: string
-}>
+type Response = Result<
+  AppError,
+  {
+    message: string
+  }
+>
 
 export class SayHelloUseCase {
   async execute(): Promise<Response> {
